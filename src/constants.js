@@ -1,0 +1,1 @@
+export const maxWidthExpandContent = 500; // 768

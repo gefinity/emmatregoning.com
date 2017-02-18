@@ -1,0 +1,156 @@
+#about {
+    
+    background-image: url(../images/cape_cornwall_image.jpg);
+    background-size: cover;
+
+    .profile {
+
+        width: 253px;
+        margin: 0 auto;
+        display: block;
+        padding: 68px 0 0 0;
+
+    }
+
+    .sectionHeader {
+
+        max-width: 400px;
+        margin: 38px auto 40px auto;
+
+        @media screen and (min-width: $phone-landscape) {
+            margin: 38px auto 80px auto;
+        }
+
+        > h2 {
+            color: #fff;
+            &:after {
+                border-color: #fff;
+            }
+        }
+
+        p {
+            @extend .openSansLight;
+            font-size: 14px;
+        }
+
+    }
+
+    .about-skills {
+
+        position: relative;
+        display: none;
+
+        // FIXME temp disabling below $phone-landscape
+        // which includes breaks above and below to close the margins
+        @media screen and (min-width: $phone-landscape) {
+            display: block;
+        }
+
+        h3 {
+            @extend .playfairRegular;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 0 0 34px 0;
+        }
+
+        .skills-list {
+
+            display: flex;
+            max-width: 300px;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+
+            @media screen and (min-width: $phone-landscape) {
+                max-width: 400px;
+            }
+
+            img {
+                height: auto;
+            }
+
+        }
+
+    }
+
+    .about-contacts {
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 110px 0;
+        flex-direction: column;
+
+        @media screen and (min-width: $phone-landscape) {
+            margin: 110px 0 190px 0;
+        }
+
+        .contacts {
+
+            display: flex;
+            flex-direction: row;
+
+            > a {
+
+                position: relative;
+                width: 55px;
+                height: 55px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                transform: rotate(45deg);
+                margin: 0 25px 0 25px;
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                background-color: transparent;
+
+                &:hover {
+
+                    border-color: rgba(255, 255, 255, 1.0);
+
+                }
+
+                > img {
+
+                    transform: rotate(-45deg);
+
+                }
+
+                .tooltipDot {
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    top: 60px;
+                    left: 60px;
+                }
+
+            }
+
+        }
+
+        .tooltip {
+
+            padding-top: 50px;
+            visibility: hidden;
+
+            &.visible {
+                visibility: visible;
+            }
+
+
+            a {
+                @extend .openSansLight;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+        }
+
+    }
+
+}

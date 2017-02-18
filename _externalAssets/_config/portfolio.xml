@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+
+	<project title="Vodafone University" thumbnail="_portfolio/tiles/tile_vodafone.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_vodafone.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_vodafone.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Vodafone University">
+				For 1 month I worked as the lead UI designer with support from 2 UX specialists. I designed a selection of main pages and elements using a mix of Photoshop and Sketch to work across 3 main breakpoints and created a digital style guide so support the designs. I also designed 6 new icons that match the style of the existing Vodafone icon set. The deadline was incredibly tight and it was a bit of a push but we did it. A very happy client!
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_vodafone.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="BT Multi-Sim" thumbnail="_portfolio/tiles/tile_bt.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_bt.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_bt.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="BT Multi-Sim">
+				For 1 month I worked as part of the BT design team at Sapient to update BTs mobile offering. I was given modules throughout the site to work on and these were pieced together. We used InVision to prototype the designs so the client could see the overall experience. A very productive, organised project. The work shown are my designs within the frame of the site.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_bt.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="United Utilities" thumbnail="_portfolio/tiles/tile_uu.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_uu.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_uu.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="United Utilities">
+				I worked for 1 month as the lead UI designer along side the UX designer at Avanade to produce the entire responsive United Utilities Business site. In addition to the site I worked on a digital style guide which outlined the design. I presented the designs to the client and key stakeholders on numerous occasions. The project got turned around in a very short amount of time. Once again, a happy client and a successful delivery.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_uu.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="Tate &amp; Lyle" thumbnail="_portfolio/tiles/tile_tatelyle.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_tatelyle.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_tatelyle.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Tate &amp; Lyle">
+				Whilst at FutureBrand the main project I worked on was the new Tate &amp; Lyle responsive site redesign. I was bought into the project after the UX work was completed and started with design exploration using the new brand guidelines. We presented four creative routes and two were chosen and a hybrid was created. I rolled out all the responsive pages in Sketch and created prototypes in Invision to explain animations and transitions. The site is currently being built so I am unable to share with you any final designs, however I thought it would be good to showcase some of my design ideas that came out of the design exploration phase. These designs weren’t selected but they are very close.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_tatelyle.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="FutureBrand Hub" thumbnail="_portfolio/tiles/tile_futurebrand.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_futurebrand.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_futurebrand.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="FutureBrand Hub">
+				As part of the new FutureBrand rebrand (which is slowly being rolled out) I updated the FutureBrand new brand hub site. This involved updating key pages with the new branding and making a new set of icons. I also designed an approval tool which allows users and admins to upload work for feedback and approval. This is a fully responsive site and all the designs had to work across all breakpoints. I’m really pleased with the outcome of it!
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_futurebrand1.jpg" />
+			</image>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_futurebrand2.jpg" />
+			</image>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_futurebrand3.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="Astellas Intranet" thumbnail="_portfolio/tiles/tile_astellas.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_astellas.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_astellas.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Astellas Intranet">
+			I was the lead designer working for 1 month on the redesign of Astellas's Intranet site. The design of the site was particularly challenging due to the constraints of Sharepoint. At launch the site was non responsive, with scope to make it responsive in the next phase. I created a digital style guide and a set of screens that could be shared within the business. The designs where delivered on time with a satisfied client.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_astellas.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="Train Aid" thumbnail="_portfolio/tiles/tile_trainaid.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_trainaid.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_trainaid.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Train Aid">
+			I was the sole designer on this project who worked on both the wireframes and the final creative. This was a responsive site which required designs for all device sizes on a selection of the main pages. I particularly enjoyed working on this project as I created the drawings on the pages to give a more personal feel. I worked closely with the development team on QA to get the project live.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_trainaid.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="Samsung App Pitch" thumbnail="_portfolio/tiles/tile_samsung.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_samsung.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_samsung.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Samsung App Pitch">
+			I was the sole designer on this pitch. The brief was to produce a selection of screens for Samsung’s in-store tariff customising application. I worked with the UX designer to produce the design of the app. After a long wait we didn't win the pitch, but I liked the design I did for it and thought I'd share it on here.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_samsung.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="PokerStars Microsite" thumbnail="_portfolio/tiles/tile_vicky.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_vicky.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_vicky.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Microsite at PokerStars">
+			Worked within a small team at PokerStars to produce a responsive microsite for Vicky Coren Mitchell's winning moment. I was the sole designer on this brief.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_vicky.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="M&amp;S Emails" thumbnail="_portfolio/tiles/tile_ms.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_ms.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_ms.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Marks &amp; Spencer">
+			For 18 months I worked at M&amp;S as a digital design contractor, during my time there I was the sole email designer. I was responsible for turning spreadsheets of product codes and prices into interesting email templates that would engage with their 3 million strong customer base. I worked on wireframes and the design with a large number of departmental stakeholders. I also worked closely with the email developer to ensure the designs would work across all email clients. Challenging!
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_ms.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="Liv Boeree Site" thumbnail="_portfolio/tiles/tile_liv.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_liv.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_liv.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Liv Boeree Site">
+			I was the sole designer who created the site map, wireframes and the design for this responsive site. The brief was to create a vibrant site for Liv Boeree that showed off her personality whilst enticing players to be as successful as her. A fun project working alongside a busy marketing team.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_liv.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="Sentry Launch Site" thumbnail="_portfolio/tiles/tile_sentry.jpg">
+		<row>
+			<image width="100%">
+				<source src="_portfolio/mobile_projects/mobile_tile_sentry.jpg" />
+				<source minWidth="480" src="_portfolio/projects/portfolio_top_sentry.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Sentry Brand Launch Site">
+			Sentry insurance was the first project I worked on whilst at FutureBrand. Sentry had just undergone a complete rebrand and it was my job to create an interim brand site that eased the current clientele of Sentry into the new look and feel. The small site was a stacked design that leads the users through the journey of the new brand.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="480" src="_portfolio/projects/portfolio_bottom_sentry.jpg" />
+			</image>
+		</row>
+	</project>
+
+</portfolio>

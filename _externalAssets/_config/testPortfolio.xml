@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+
+	<!-- 
+		template
+	-->
+	<!--
+	
+	<project title="Example" thumbnail="http://placehold.it/640x640">
+		<row>
+			<image width="100%" src="http://placehold.it/1440x640"/>
+		</row>
+		<row>
+			<image width="50%" src="http://placehold.it/1440x640"/>
+			<paragraph width="50%" title="optional text title" bgColor="" color="" titleColor="" lineColor="">
+				bla bla bla
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%" src=""/>
+		</row>
+	</project>
+
+	TODO
+	if I ever want responsive paragraph control, a maybe better syntax would be something like the below:
+
+	<row>
+		<breakpoint>
+			<paragraph width="100">
+				...
+			</paragraph>
+		</breakpoint>
+
+		<breakpoint minWidth='768'>
+			<image width="50" src="_portfolio/projects/left_small_ms.jpg" />
+			<paragraph width="50">
+				...
+			</paragraph>
+		</breakpoint>
+	</row>
+
+	-->
+
+	<project title="1 2 1" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+		<row>
+			<image width="50%" src="_portfolio/projects/left_small_ms.jpg" />
+			<paragraph width="50%" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="1 2 1 &amp;">
+				I worked as the lead designer on Marks &amp; Spencer’s HTML emails.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+	<project title="1 2 2" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+		<row>
+			<paragraph width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="1 2 2">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</paragraph>
+		</row>
+		<row>
+			<image width="75%" src="_portfolio/projects/bottom_large_ms.jpg" />
+			<image width="25%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+	<project title="1 2 1 to 1 1 1 for mobile" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+		<row>
+			<image width="50%">
+				<source minWidth="768" src="_portfolio/projects/left_small_ms.jpg" />
+			</image>
+			<paragraph width="50%" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="1 2 1 to 1 1 1 for mobile">
+				I worked as the lead designer on Marks &amp; Spencer’s HTML emails.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+	<project title="1 1 1 w/ mobile images" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<!--
+				image without src can have multiple children <source />
+				that specify src and minWidth, site will choose the best fit
+			-->
+			<image width="100%">
+				<source src="_portfolio/projects/bottom_large_ms.jpg" />
+				<source minWidth="768" src="_portfolio/projects/top_large_ms.jpg" />
+			</image>
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="1 1 1 w/ mobile images">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%">
+				<source minWidth="768" src="_portfolio/projects/top_large_ms.jpg" />
+			</image>
+		</row>
+	</project>
+
+	<project title="1 1 1 w/ 3 col info block" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width='100%' src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+		<row>
+			<paragraph  width="100%" class="mainCopy" title="1 1 1 w/ 3 col info block">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</paragraph>
+		</row>
+		<row>
+			<!-- 
+			FIXME  
+			styleClass/class idea... which could map to a css file or... something else in the implementation
+			and I would get rid of bgColor, color and lineColor
+			so this would become ... just pure data... and class is just a ref/hook
+			like an externalId but... class is a better name pick because its only unique if user chooses to assign new ones for every block
+			=== but ... impl wise... I would then maybe want to expose a real .css sheet for the theme... thats hackable. maybe
+			-->
+			<paragraph width="33.333333%" title="My Role" class="aboutProjectCopy">
+				UI &amp; Responsive Designer
+			</paragraph>
+			<paragraph width="33.333333%" title="Client" class="aboutProjectCopy">
+				British Telecom
+			</paragraph>
+			<paragraph width="33.333333%" title="Agency" class="aboutProjectCopy">
+				Sapient
+			</paragraph>
+		</row>
+		<row>
+			<image width='100%' src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+	</project>
+
+</portfolio>

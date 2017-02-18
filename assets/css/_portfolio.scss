@@ -1,0 +1,294 @@
+
+#portfolio {
+
+    background-color: #fff;
+
+    .portfolioItems {
+
+        margin: 0 auto;
+
+        @media screen and (min-width: 960px) {
+            max-width: 960px;
+        }
+
+        @media screen and (min-width: $large-desktop) {
+            max-width: $large-desktop;
+        }
+
+        @media screen and (min-width: 1600px) {
+            max-width: 1600px;
+        }
+
+    }
+
+}
+
+#tiles {
+
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+        user-select: none;
+    }
+
+}
+
+.tile {
+
+    position: relative;
+    display: block;
+    float: left;
+    cursor: pointer !important;
+    overflow: hidden;
+    
+    @include grid-col(1, 2);
+
+    @media screen and (min-width: $tablet-portrait) {
+        @include grid-col(1, 3);
+    }
+
+    @media screen and (min-width: 1280px) {
+        @include grid-col(1, 4);
+    }
+
+    @media screen and (min-width: 1600px) {
+        @include grid-col(1, 5);
+    }
+
+    > img {
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+
+    &.expanded {
+
+        .tileOverlay {
+
+            transition: all .15s ease-in-out;
+            opacity: 1;
+
+        }
+
+    }
+
+    @media screen and (min-width: $phone-landscape) {
+
+        &:hover {
+            .tileOverlay {
+                transition: all .4s ease-in-out;
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    .tileOverlay {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .overlayColor {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $dark;
+            opacity: 1;
+
+        }
+
+        .overlayContent {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            // @media screen and (min-width: $phone-landscape) {
+            //     display: flex;
+            // }
+
+            > h3 {
+
+                position: relative;
+                @extend .playfairBold;
+                font-size: 25px;
+                min-height: 2.2em;
+                color: #ffffff;
+                text-align: center;
+                padding: 0 50px;
+                letter-spacing: 1px;
+                cursor: pointer;
+
+            }
+
+            button {
+
+                position: relative;
+                padding: 14px 52px;
+                text-transform: uppercase;
+                letter-spacing: 0.9px;
+                font-size: 12px;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 50px;
+                background-color: transparent;
+                margin-top: 24px;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &:hover {
+                    border-color: rgba(255, 255, 255, 0.5);
+                }
+
+            }
+
+        }
+
+        .loading {
+
+            position: relative;
+            width: 45px;
+            margin: 25px auto 0 auto;
+            display: block;
+
+            &.up {
+                display: none;
+            }
+
+            &.loading {
+                width: auto;
+                margin: 0 auto;
+            }
+
+        }
+
+    }
+
+}
+
+$maxExpandedWidth: 1440px;
+//$maxExpandedWidth: 1200px;
+
+.expanded {
+
+    position: relative;
+    min-height: 100%;
+
+    .expandedTitle {
+        position: fixed;
+        top: 0;
+        height: 68px;
+        width: 100%;
+        opacity: 0.95;
+        background-color: #ffffff;
+        z-index: 1;
+
+        > div {
+            max-width: $maxExpandedWidth;
+            padding: 0 30px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
+            a {
+                &.logo {
+                    margin-left: auto;
+                    > img {
+                        width: 32px;
+                    }
+                    @media screen and (min-width: $phone-landscape) {
+                        margin: 0;
+                    }
+                }
+            }
+
+            h1 {
+                margin: auto;
+                font-size: 16px;
+                padding: 0 30px;
+                letter-spacing: 1px;
+                display: none;
+                // 
+                visibility: hidden;
+
+                @media screen and (min-width: $phone-landscape) {
+                    display: block;
+                }
+
+            }
+        }
+    }
+
+    .expandedInner {
+
+        margin-top: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .row {
+
+        position: relative;
+        width: 100%;
+        max-width: $maxExpandedWidth;
+        display: flex;
+
+        // TODO could allow %'s to be > 100 and wrap but worried about browser support
+        //flex-wrap: wrap;
+
+        .col {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            > div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+
+    }
+
+    .item-text-line {
+
+        width: 40px;
+        border-top: 2px solid #fff;
+        border-top-color: #fff;
+        margin: 70px 0 20px 0;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+}

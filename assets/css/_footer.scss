@@ -1,0 +1,32 @@
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    background-color: #ffffff;
+
+    .footer-inner {
+
+        padding: 75px 0 75px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 14px;
+            line-height: 1.57;
+            letter-spacing: 0.9px;
+            text-align: center;
+            color: $dark;
+        }
+
+        .logo {
+            width: 32px;
+            padding: 0 0 20px 0;
+        }
+
+    }
+
+}
