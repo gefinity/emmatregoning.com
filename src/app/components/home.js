@@ -36,9 +36,10 @@ export default React.createClass({
                                 Hand draw scamps
                             </p>
                             <p>
-                                Initial design exploration
+                                Collate inspirational assets for moodboards and storyboarding
                             </p>
                             <p>
+                                Initial design exploration
                             </p>
                         </div>
                         <div>
@@ -60,7 +61,7 @@ export default React.createClass({
                                 <span>03</span>
                             </div>
                             <p>
-                                Use Zeplin to provide designs to devs
+                                Share creative with developers using Zeplin
                             </p>
                             <p>
                                 Work with the dev team to provide creative QA
