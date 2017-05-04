@@ -26,11 +26,11 @@ const slickCarouselSettings = {
     slidesToShow: 6,
     slidesToScroll: 6,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    autoplay: false,
+    //autoplaySpeed: 5000,
     focusOnSelect: false,
     pauseOnHover: true, // FIXME seems buggy
-    speed: 500,
+    speed: 1500,
     responsive: [
         {
             breakpoint: 1024,
