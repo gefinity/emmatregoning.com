@@ -1,8 +1,8 @@
 import React                from 'react';
-import brandsStore          from 'app/stores/brandsStore';
-import brandsActions        from 'app/actions/brandsActions';
-import portfolioStore       from 'app/stores/portfolioStore';
-import portfolioActions     from 'app/actions/portfolioActions';
+import brandsStore          from '../../app/stores/brandsStore';
+import brandsActions        from '../../app/actions/brandsActions';
+import portfolioStore       from '../../app/stores/portfolioStore';
+import portfolioActions     from '../../app/actions/portfolioActions';
 
 export default function (ComposedComponent) { 
     return React.createClass({

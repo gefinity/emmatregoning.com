@@ -1,5 +1,6 @@
-import React    from 'react';
-import $        from 'jquery';
+import React        from 'react';
+import $            from 'jquery';
+import Velocity     from 'velocity-animate';
 
 const scrollSpeed = 1000;
 
@@ -13,7 +14,7 @@ export default React.createClass({
             document.onmousewheel !== undefined ? 'mousewheel' : // Webkit and IE support at least "mousewheel"
             'DOMMouseScroll'; // let's assume that remaining browsers are older Firefox
 
-        el.velocity('scroll', {
+        Velocity(el, 'scroll', {
             duration: scrollSpeed,
             easing: 'easeOutQuint',
             complete: () => {
@@ -23,7 +24,7 @@ export default React.createClass({
 
         // detect wheel and touchmove events and stop any app scrolling to avoid scroll fighting:
         $(window).on(wheelEvent + ' touchmove.scrollFighting', () => {
-            el.velocity('stop');
+            Velocity(el, 'stop');
         });
 
     },
@@ -60,21 +61,29 @@ export default React.createClass({
         return (
             <div className='nav'>
                 <a href className='navLogo' onClick={this.scrollTo.bind(this, '.app')}>
-                    <img src={require('images/logo-32-x-32.svg')} />
+                    <img src='images/logo-32-x-32.svg' />
                 </a>
                 <nav>
                     <span ref='underline' className='underline'></span>
                     <div>
-                        <a href onClick={this.scrollTo.bind(this, '.app')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>What I do</a>
+                        <a href onClick={this.scrollTo.bind(this, '.app')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
+                            What I do
+                        </a>
                     </div>
                     <div>
-                        <a href onClick={this.scrollTo.bind(this, '#portfolio')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>Work</a>
+                        <a href onClick={this.scrollTo.bind(this, '#portfolio')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
+                            Work
+                        </a>
                     </div>
                     <div>
-                        <a href onClick={this.scrollTo.bind(this, '#brands')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>Clients</a>
+                        <a href onClick={this.scrollTo.bind(this, '#brands')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
+                            Clients
+                        </a>
                     </div>
                     <div>
-                        <a href onClick={this.scrollTo.bind(this, '#about')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>About</a>
+                        <a href onClick={this.scrollTo.bind(this, '#about')} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
+                            About
+                        </a>
                     </div>
                 </nav>
             </div>

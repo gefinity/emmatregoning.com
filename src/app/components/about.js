@@ -1,9 +1,6 @@
 import React                from 'react';
 import $                    from 'jquery';
 import reactDom             from 'react-dom';
-import 'velocity-animate';
-import 'css/vendor/slick.css';
-import 'css/vendor/slick-theme.css';
 
 const tooltipTimeoutTime = 2000;
 
@@ -52,7 +49,7 @@ export default React.createClass({
 
             <section id='about'>
 
-                <img alt src={require('images/me@2x.png')} className='profile' />
+                <img alt src='images/me@2x.png' className='profile' />
 
                 <div className='sectionHeader'>
                     <h2>About</h2>
@@ -70,12 +67,12 @@ export default React.createClass({
                     </h3>
 
                     <div className='skills-list'>
-                        <img alt src={require('images/sketch@2x.png')} width='30' />
-                        <img alt src={require('images/ps@2x.png')} width='30' />
-                        <img alt src={require('images/invision@2x.png')} width='30' />
-                        <img alt src={require('images/marvel@2x.png')} width='66' />
-                        <img alt src={require('images/zeplin@2x.png')} width='40' />
-                        <img alt src={require('images/slask@2x.png')} width='30' />
+                        <img alt src='images/sketch@2x.png' width='30' />
+                        <img alt src='images/ps@2x.png' width='30' />
+                        <img alt src='images/invision@2x.png' width='30' />
+                        <img alt src='images/marvel@2x.png' width='66' />
+                        <img alt src='images/zeplin@2x.png' width='40' />
+                        <img alt src='images/slask@2x.png' width='30' />
                     </div>
 
                 </div>
@@ -85,15 +82,15 @@ export default React.createClass({
                     <div className='contacts'>
 
                         <a href='https://uk.linkedin.com/in/emma-tregoning-3a0a0011' target='_blank' title='LinkedIn' onMouseOver={this.hideTooltip}>
-                            <img alt src={require('images/linkedin.svg')} />
+                            <img alt src='images/linkedin.svg' />
                         </a>
 
                         <a href='mailto:emma@lovebirddigital.com' title='Email' onMouseOver={this.hideTooltip}>
-                            <img alt src={require('images/email.svg')} />
+                            <img alt src='images/email.svg' />
                         </a>
 
                         <a href='tel://447793068958' title='Mobile' onMouseOver={this.onTooltip.bind(this, true)} onMouseOut={this.onTooltip.bind(this, false)}>
-                            <img alt src={require('images/phone.svg')} />
+                            <img alt src='images/phone.svg' />
                             {this.state.tooltip &&
                                 <div className='tooltipDot'></div>
                             }

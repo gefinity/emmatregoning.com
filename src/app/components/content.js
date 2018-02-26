@@ -1,7 +1,7 @@
 import $                    from 'jquery';
 import _                    from 'lodash';
 import React                from 'react';
-import Footer               from 'app/components/footer';
+import Footer               from './footer';
 import {
     Router,
     Link,
@@ -10,7 +10,7 @@ import {
 import {
     maxWidthExpandContent
 } from 'constants';
-import getImageSource       from 'app/getImageSource';
+import getImageSource       from '../../app/getImageSource';
 
 export default React.createClass({
 
@@ -35,11 +35,11 @@ export default React.createClass({
                 <div className='expandedTitle'>
                     <div>
                         <a href onClick={this.onBack}>
-                            <img alt src={require('images/back-to-portfolio.svg')} />
+                            <img alt src='images/back-to-portfolio.svg' />
                         </a>
                         <h1>{expandedItem.title}</h1>
                         <Link to='/' className='logo'>
-                            <img src={require('images/logo-32-x-32.svg')} width='32' />
+                            <img src='images/logo-32-x-32.svg' width='32' />
                         </Link>
                     </div>
                 </div>

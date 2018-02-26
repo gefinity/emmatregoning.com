@@ -6,7 +6,7 @@ export default React.createClass({
         return (
             <footer>
                 <div className='footer-inner'>
-                    <img className='logo' src={require('images/logo-32-x-32.svg')} />
+                    <img className='logo' src='images/logo-32-x-32.svg' />
                     <p>
                         Copyright &copy; Emma Tregoning
                         <br/>

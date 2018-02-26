@@ -2,3 +2,5 @@ _externalAssets/_portfolio/*
 .DS_Store
 node_modules
 dist/
+build/.tmp
+build/packages

@@ -4,13 +4,13 @@ import {
     Router,
     hashHistory
 } from 'react-router';
-import Item                 from 'app/components/item';
+import Item                 from './item';
 import imagesLoaded         from 'imagesLoaded';
 import TransitionGroup      from 'react-addons-transition-group';
 import {
     maxWidthExpandContent
 } from 'constants';
-import getImageSource       from 'app/getImageSource';
+import getImageSource       from '../getImageSource';
 
 const preloadTimeout = 2000;
 

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portfolio>
+
+	<!-- 
+		template
+		
+		notes:
+
+		*** row doesn't wrap, so child width's should add up to 100 and not more
+
+	-->
+	<!--
+	
+	<project title="Example" thumbnail="http://placehold.it/640x640">
+		<row>
+			<image width="100%" src="http://placehold.it/1440x640"/>
+		</row>
+		<row>
+			<image width="50%" src="http://placehold.it/1440x640"/>
+			<paragraph width="50%" title="optional text title" bgColor="" color="" titleColor="" lineColor="">
+				bla bla bla
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%" src=""/>
+		</row>
+	</project>
+
+	-->
+
+	<project title="Two column test" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+		<row>
+			<image width="50%" src="_portfolio/projects/left_small_ms.jpg" />
+			<paragraph width="50%" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="Two column test">
+				I worked as the lead designer on Marks &amp; Spencer’s HTML emails.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+	<project title="Single column test" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+
+			<!-- FIXME idea -->
+			<!--
+			<image width="100%">
+				<source src="_portfolio/projects/top_large_ms.jpg" />
+				<source minWidth="1200" src="_portfolio/projects/top_large_ms.jpg" />
+			</image>
+			-->
+
+		</row>
+		<row>
+			<paragraph width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Single column test">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</paragraph>
+		</row>
+		<row>
+			<image width="75%" src="_portfolio/projects/bottom_large_ms.jpg" />
+			<image width="25%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+	<project title="Two column test dupe" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+		<row>
+			<image width="50%" src="_portfolio/projects/left_small_ms.jpg" />
+			<paragraph width="50%" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="Two column test dupe">
+				I worked as the lead designer on Marks &amp; Spencer’s HTML emails.
+			</paragraph>
+		</row>
+		<row>
+			<image width="100%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+	<project title="Single column test dupe" thumbnail="_portfolio/tiles/mands_tile.jpg">
+		<row>
+			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
+		</row>
+		<row>
+			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Single column test dupe">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</paragraph>
+		</row>
+		<row>
+			<image width="75%" src="_portfolio/projects/bottom_large_ms.jpg" />
+			<image width="25%" src="_portfolio/projects/bottom_large_ms.jpg" />
+		</row>
+	</project>
+
+</portfolio>

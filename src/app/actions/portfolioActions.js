@@ -1,5 +1,5 @@
-import dispatcher               from 'app/dispatcher';
-import portfolioService         from 'app/services/portfolioService';
+import dispatcher               from '../dispatcher';
+import portfolioService         from '../services/portfolioService';
 
 export default {
     

@@ -1,12 +1,12 @@
 import $                from 'jquery';
 import _                from 'lodash';
 import React            from 'react';
-import Nav              from 'app/components/nav';
-import Home             from 'app/components/home';
-import Portfolio        from 'app/components/portfolio';
-import Brands           from 'app/components/brands';
-import About            from 'app/components/about';
-import Footer           from 'app/components/footer';
+import Nav              from './nav';
+import Home             from './home';
+import Portfolio        from './portfolio';
+import Brands           from './brands';
+import About            from './about';
+import Footer           from './footer';
 
 const scrollSpeed = 1000;
 

@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
 let portfolioSrc = '_config/portfolio.xml';
-if (__DEV__) {
-    portfolioSrc = '_config/testPortfolio.xml';
+if (process.env.__DEV__) {
+    portfolioSrc = 'testConfig/portfolio.xml';
 }
 
 export default {
@@ -56,8 +56,9 @@ export default {
                                 }
 
                                 else if (colXml.nodeName === 'paragraph') {
+
                                     col.title = $(colXml).attr('title');
-                                    col.text = $(colXml).text();
+                                    col.text = $(colXml).html();
                                     col.class = $(colXml).attr('class');
                                 }
 

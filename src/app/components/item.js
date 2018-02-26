@@ -1,7 +1,7 @@
 import React        from 'react';
 import $            from 'jquery';
 import reactDom     from 'react-dom';
-import 'velocity-animate';
+import Velocity     from 'velocity-animate';
 
 export default React.createClass({
 
@@ -11,11 +11,15 @@ export default React.createClass({
 
     componentWillEnter (next) {
         let node = reactDom.findDOMNode(this);
-        $(node).css({
+
+        Velocity(node, {
             opacity: 0
-        }).stop().velocity({
+        },{
+            duration: 0,
+        });
+        Velocity(node, {
             opacity: 1
-        }, {
+        },{
             duration: 500,
             delay: $(node).index() * 50,
             complete: next
@@ -26,14 +30,14 @@ export default React.createClass({
         return (
             <div className={this.props.loading ? 'tile expanded' : 'tile'} key={this.props.portfolioItem.cid} onClick={this.props.onExpand.bind(null, this.props.portfolioItem)}>
                 
-                <img src={this.props.portfolioItem.thumb} alt />
+                <img src={this.props.portfolioItem.thumb} />
                 
                 <div className='tileOverlay'>
                     
                     <div className='overlayColor'></div>
 
                     {this.props.loading &&
-                        <img className='loading' src={require('images/item-loading.svg')} alt />
+                        <img className='loading' src='images/item-loading.svg' />
                     }
 
                     {!this.props.loading &&

@@ -1,6 +1,6 @@
 import React                from 'react';
-import portfolioStore       from 'app/stores/portfolioStore';
-import portfolioActions     from 'app/actions/portfolioActions';
+import portfolioStore       from '../../app/stores/portfolioStore';
+import portfolioActions     from '../../app/actions/portfolioActions';
 
 export default function (ComposedComponent) {
     

@@ -3,7 +3,7 @@ import React                    from 'react';
 import {Router}                 from 'react-router';
 import reactDom                 from 'react-dom';
 import TransitionGroup          from 'react-addons-transition-group';
-import 'velocity-animate';
+import Velocity                 from 'velocity-animate';
 
 const transitionSpeed = 0;
 
@@ -15,7 +15,8 @@ let AnimationWrapper = React.createClass({
 
         // $(node).addClass('animating-page');
 
-        $(node).stop().velocity(
+        Velocity(node, 'stop');
+        Velocity(node,
             {
                 //translateX: left ? -$(window).width() : $(window).width()
                 opacity: 0
@@ -32,14 +33,14 @@ let AnimationWrapper = React.createClass({
 
         // $(node).addClass('animating-page');
 
-        $(node).stop()
-        .velocity({
+        Velocity(node, 'stop');
+        Velocity(node, {
             //translateX: left ? $(window).width() : -$(window).width(),
             opacity: 0
         }, {
             duration: 0
         })
-        .velocity({
+        Velocity(node, {
             //translateX: 0
             opacity: 1
         }, {

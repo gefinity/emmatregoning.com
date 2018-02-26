@@ -1,5 +1,5 @@
-import dispatcher               from 'app/dispatcher';
-import brandsService            from 'app/services/brandsService';
+import dispatcher               from '../dispatcher';
+import brandsService            from '../services/brandsService';
 
 export default {
     

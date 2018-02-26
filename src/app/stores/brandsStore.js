@@ -1,5 +1,5 @@
-import baseStore        from 'app/lib/baseStore';
-import dispatcher       from 'app/dispatcher';
+import baseStore        from '../lib/baseStore';
+import dispatcher       from '../dispatcher';
 
 let brands = [];
 let fetching = false;

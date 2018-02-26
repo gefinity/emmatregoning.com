@@ -1,6 +1,12 @@
 @charset 'UTF-8';
 
+@import 'normalize';
+@include normalize();
+
 @import '_utilityBelt';
+
+@import 'assets/css/vendor/slick';
+@import 'assets/css/vendor/slick-theme';
 
 $body-background-color: #ffffff;
 $dark: #101820;
