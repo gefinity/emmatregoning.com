@@ -34,7 +34,7 @@
 		</row>
 		<row>
 			<image width="50%" src="_portfolio/projects/left_small_ms.jpg" />
-			<paragraph width="50%" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="Two column test">
+			<paragraph width="50%" class="mainCopy" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="Two column test">
 				I worked as the lead designer on Marks &amp; Spencer’s HTML emails.
 			</paragraph>
 		</row>
@@ -58,7 +58,7 @@
 
 		</row>
 		<row>
-			<paragraph width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Single column test">
+			<paragraph width="100%" class="mainCopy" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Single column test">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</paragraph>
 		</row>
@@ -74,7 +74,7 @@
 		</row>
 		<row>
 			<image width="50%" src="_portfolio/projects/left_small_ms.jpg" />
-			<paragraph width="50%" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="Two column test dupe">
+			<paragraph width="50%" class="mainCopy" bgColor="#ffffff" color="#060404" lineColor="#bed60e" title="Two column test dupe">
 				I worked as the lead designer on Marks &amp; Spencer’s HTML emails.
 			</paragraph>
 		</row>
@@ -88,7 +88,7 @@
 			<image width="100%" src="_portfolio/projects/top_large_ms.jpg" />
 		</row>
 		<row>
-			<paragraph  width="100%" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Single column test dupe">
+			<paragraph  width="100%" class="mainCopy" bgColor="#101820" color="#ffffff" lineColor="#ffffff" title="Single column test dupe">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</paragraph>
 		</row>

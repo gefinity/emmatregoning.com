@@ -1,39 +1,24 @@
 import React                from 'react';
-import portfolioStore       from '../../app/stores/portfolioStore';
-import portfolioActions     from '../../app/actions/portfolioActions';
+import getPortfolio         from '../../app/actions/getPortfolio';
+
+import { connect }          from 'react-redux';
 
 export default function (ComposedComponent) {
-    
-    return React.createClass({
-
-        getInitialState () {
+    return connect(
+        // mapStateToProps
+        (state, ownProps) => {
+            const index = parseInt(ownProps.params.index, 10);
             return {
-                portfolio: portfolioActions.getPortfolio() || [],
-            };
-        },
-
-        componentDidMount () {        
-            if (!portfolioStore.fetching && !portfolioStore.lastUpdated) {
-                portfolioActions.getPortfolio();
+                portfolioItem: state.portfolio.items[index] || null
             }
-            portfolioStore.addChangeListener(this.onPortfolioChange);
         },
-
-        componentWillUnmount () {
-            portfolioStore.removeChangeListener(this.onPortfolioChange);
-        },
-
-        onPortfolioChange () {
-            this.setState({
-                portfolio: portfolioStore.get()
-            });
-        },
-
-        render () {
-            return <ComposedComponent   {...this.props}
-                                        portfolioItem={this.state.portfolio[this.props.params.index]}
-                                        />;
+        // mapDispatchToProps
+        (dispatch) => {
+            return {
+                getPortfolio () {
+                    dispatch(getPortfolio());
+                }
+            };
         }
-
-    });
+    )(ComposedComponent);
 };

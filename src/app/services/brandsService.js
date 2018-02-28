@@ -1,9 +1,6 @@
 import $ from 'jquery';
 
 let brandsSrc = '_config/brands.json';
-if (process.env.__DEV__) {
-    brandsSrc = 'testConfig/brands.json';
-}
 
 export default {
     fetchBrands () {

@@ -18,6 +18,15 @@ export default React.createClass({
         }
     },
 
+    componentWillMount () {
+        if (!this.props.brands.length) {
+            this.props.getBrands();
+        }
+        if (!this.props.portfolio.length) {
+            this.props.getPortfolio();
+        }
+    },
+
     render () {
 
         return (

@@ -56,7 +56,7 @@ let AnimationWrapper = React.createClass({
     },
 
     componentDidEnter () {
-        let node = reactDom.findDOMNode(this);
+        //let node = reactDom.findDOMNode(this);
         //$(node).removeClass('animating-page');
     },
 
@@ -72,14 +72,17 @@ export default React.createClass({
         
         let path = this.props.location.pathname;
 
-        return (
-            <TransitionGroup component='div' className='app'>
-                <AnimationWrapper key={path} path={path}>
-                    {this.props.children}
-                </AnimationWrapper>
-            </TransitionGroup>
-        );
+        // TODO: not using this now, was seeing odd errors and the benefit wasn't worth
 
+        // return (
+        //     <TransitionGroup component='div' className='app'>
+        //         <AnimationWrapper key={path} path={path}>
+        //             {this.props.children}
+        //         </AnimationWrapper>
+        //     </TransitionGroup>
+        // );
+
+        return this.props.children;
     }
 
 });

@@ -50,7 +50,11 @@ function jsBundler () {
         })
         .transform(babel, {
             presets: ['es2015', 'react'],
-            plugins: ['transform-strict-mode', 'transform-class-properties']
+            plugins: [
+                'transform-strict-mode',
+                'transform-class-properties',
+                'transform-object-rest-spread'
+            ]
         }
     );
 }
@@ -99,7 +103,7 @@ gulp.task('make-index', () => {
 gulp.task('build', ['make-index', 'make-js-bundle', 'make-css-bundle', 'copy-assets', 'copy-server']);
 
 gulp.task('make-package', ['build'], () => {
-    return gulp.src(paths.buildPublic+'/*')
+    return gulp.src(paths.buildRoot+'/**/*')
         .pipe(zip(`package-${git.short()}.zip`))
         .pipe(gulp.dest(paths.packages))
 });

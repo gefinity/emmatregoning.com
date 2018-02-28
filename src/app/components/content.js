@@ -25,85 +25,95 @@ export default React.createClass({
         hashHistory.push(`/`);
     },
 
+    componentWillMount () {
+        if (!this.props.portfolioItem) {
+            this.props.getPortfolio();
+        }
+    },
+
     render () {
 
         let expandedItem = this.props.portfolioItem;
 
-        return (
-            <div className='page expanded'>
+        if (expandedItem) {
+            return (
+                <div className='page expanded'>
 
-                <div className='expandedTitle'>
-                    <div>
-                        <a href onClick={this.onBack}>
-                            <img alt src='images/back-to-portfolio.svg' />
-                        </a>
-                        <h1>{expandedItem.title}</h1>
-                        <Link to='/' className='logo'>
-                            <img src='images/logo-32-x-32.svg' width='32' />
-                        </Link>
+                    <div className='expandedTitle'>
+                        <div>
+                            <a href onClick={this.onBack}>
+                                <img alt src='images/back-to-portfolio.svg' />
+                            </a>
+                            <h1>{expandedItem.title}</h1>
+                            <Link to='/' className='logo'>
+                                <img src='images/logo-32-x-32.svg' width='32' />
+                            </Link>
+                        </div>
                     </div>
-                </div>
 
-                <div className='expandedInner'>
+                    <div className='expandedInner'>
 
-                    {(expandedItem.rows || []).map((row, index) => {
-                        return (
-                            <div className='row' key={'row-'+index}>
+                        {(expandedItem.rows || []).map((row, index) => {
+                            return (
+                                <div className='row' key={'row-'+index}>
 
-                                {row.cols.map((col, index) => {
+                                    {row.cols.map((col, index) => {
 
-                                    // TODO thinking about converting to flex instead of using % of other units
-                                    //      let flexWidth = parseInt(col.width.replace('%', ''), 10)/100;
-                                    // would need to swap width for flex prop on each col
-                                    //      width: col.width
-                                    //      flex: flexWidth
+                                        // TODO thinking about converting to flex instead of using % of other units
+                                        //      let flexWidth = parseInt(col.width.replace('%', ''), 10)/100;
+                                        // would need to swap width for flex prop on each col
+                                        //      width: col.width
+                                        //      flex: flexWidth
 
-                                    if (col.bgImageSrc) {
+                                        if (col.bgImageSrc) {
 
-                                        let src = col.bgImageSrc;
-                                        if (_.isArray(col.bgImageSrc)) {
-                                            // multiple image sources available with minWidth properties
-                                            src = getImageSource(this.props.windowWidth, col.bgImageSrc);
-                                        }
+                                            let src = col.bgImageSrc;
+                                            if (_.isArray(col.bgImageSrc)) {
+                                                // multiple image sources available with minWidth properties
+                                                src = getImageSource(this.props.windowWidth, col.bgImageSrc);
+                                            }
 
-                                        if (src) {
+                                            if (src) {
+                                                return (
+                                                    <div className='col' key={'col-'+index} style={{width: col.width, backgroundColor: col.bgColor, color: col.color}}>
+                                                        <img src={src} alt={col.alt} />
+                                                    </div> 
+                                                );
+                                            }
+
+                                        } else if (col.text) {
+
                                             return (
-                                                <div className='col' key={'col-'+index} style={{width: col.width, backgroundColor: col.bgColor, color: col.color}}>
-                                                    <img src={src} alt={col.alt} />
-                                                </div> 
+                                                <div className={col.class ? 'col ' + col.class : 'col'} key={'col-'+index} style={{width: col.width}}>
+                                                    <div>
+                                                        <div className='item-text-line'></div>
+                                                        {col.title &&
+                                                            <h3>
+                                                                {col.title}
+                                                            </h3>
+                                                        }
+                                                        {/* allow html stuff like <b> in the text */}
+                                                        <p dangerouslySetInnerHTML={{__html: col.text}}></p>
+                                                    </div>
+                                                </div>
                                             );
+
                                         }
 
-                                    } else if (col.text) {
+                                    })}
+                                </div>
+                            );
+                        })}
 
-                                        return (
-                                            <div className={col.class ? 'col ' + col.class : 'col'} key={'col-'+index} style={{width: col.width}}>
-                                                <div>
-                                                    <div className='item-text-line'></div>
-                                                    {col.title &&
-                                                        <h3>
-                                                            {col.title}
-                                                        </h3>
-                                                    }
-                                                    {/* allow html stuff like <b> in the text */}
-                                                    <p dangerouslySetInnerHTML={{__html: col.text}}></p>
-                                                </div>
-                                            </div>
-                                        );
+                    </div>
 
-                                    }
-
-                                })}
-                            </div>
-                        );
-                    })}
+                    <Footer />
 
                 </div>
-
-                <Footer />
-
-            </div>
-        );
+            );
+        } else {
+           return null; 
+        }
 
     },
 

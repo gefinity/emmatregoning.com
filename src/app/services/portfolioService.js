@@ -1,9 +1,6 @@
 import $ from 'jquery';
 
 let portfolioSrc = '_config/portfolio.xml';
-if (process.env.__DEV__) {
-    portfolioSrc = 'testConfig/portfolio.xml';
-}
 
 export default {
 

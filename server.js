@@ -10,6 +10,8 @@ app.use(express.static(path.join(__dirname, 'static')));
 // DEV:
 // static assets will be in the project assets folder
 app.use(express.static(path.join(__dirname, 'assets')));
+// dev mirror of '_externalAssets' dir structure, isn't copied for build
+app.use(express.static(path.join(__dirname, 'assets/refConfig')));
 // bundles:
 app.use(express.static(path.join(__dirname, 'build/.tmp/static')));
 

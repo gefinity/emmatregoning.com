@@ -103,7 +103,7 @@ export default React.createClass({
                 <div className='brandCarousel'>
                     <div className='slider'>
                         <div className='' > {/* onClick={this.onClick} */}
-                            {brands.length &&
+                            {(brands.length > 0) &&
                                 <Slider ref='slider' {...Object.assign({}, slickCarouselSettings, {
                                     nextArrow: <NextArrow />,
                                     prevArrow: <PrevArrow />,

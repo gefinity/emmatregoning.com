@@ -1,0 +1,62 @@
+.mainCopy {
+    background-color: #101820;
+}
+
+.mainCopy .item-text-line {
+    border-top-color: #fff;
+}
+
+.mainCopy h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 30px 20px 30px;
+    letter-spacing: 1px;
+}
+
+.mainCopy p {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 30px 87px 30px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 480px) {
+    .mainCopy h3 {
+        font-size: 30px;
+    }
+    .mainCopy p {
+        max-width: 70%;
+    }
+}
+
+.aboutProjectCopy {
+    display: none !important;
+    background-color: #1A252F;
+}
+
+.aboutProjectCopy .item-text-line {
+    display: none;
+}
+
+.aboutProjectCopy h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 30px 20px 30px;
+}
+
+.aboutProjectCopy p {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 30px 40px 30px;
+}
+
+@media screen and (min-width: 480px) {
+    .aboutProjectCopy {
+        display: flex !important;
+    }
+}
